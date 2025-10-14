@@ -1,5 +1,5 @@
 # Tutorial
--Abrir VSC ver se ta logadoubuntu(canto inferior esquerdo) file open folder: seleciona tudo e apaga
+-Abrir VSC ver se ta logado ubuntu(canto inferior esquerdo) file open folder: seleciona tudo e apaga
 
 -/var/www/html e da um ok terminal novo terminal git clone LINK_GITHUB da um enter.Novamente, file open folder: seleciona tudo e apaga
 
