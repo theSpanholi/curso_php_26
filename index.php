@@ -83,3 +83,11 @@ echo "O resto da divisão é de " . $restoDivisao;
 //EXPLICAÇÃO DO MÓDULO
 // 50 / 11 = 6 o módulo é resto então módulo igual a 6 !
 
+/**
+ * Exercicio 1;
+ * Fazer a tabuada do 5, 6.
+ * 
+ * Exercicio 2;
+ * calcular as médias artimeticas, Ponderada e Harmonica.
+ */
+
