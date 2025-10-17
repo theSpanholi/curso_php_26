@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $aviao; // null || undefined || d1d54d55555d4
 
@@ -48,7 +48,7 @@ echo "Subtração é: " . $valorSubtracao;
 echo "<h1>MULTIPLICAÇÃO</h1>";
 
 
-$arvores = 10 ; 
+$arvores = 10 ;
 $frutos = 30 ;
 
 echo "Temos $arvores  Àrvores frutiferas, cada uma dessas àrvores nós dão $frutos frutos." ;
@@ -75,7 +75,7 @@ echo "Cada pessoa irá receber " . $cadaUm . " pedaços de bolo!" ;
 
 echo "<h1>MODULO</h1>";
 
-$valor1 = 50; 
+$valor1 = 50;
 $valor2 = 11;
 $restoDivisao = $valor1 % $valor2 ;
 echo "O resto da divisão é de " . $restoDivisao;
@@ -86,8 +86,54 @@ echo "O resto da divisão é de " . $restoDivisao;
 /**
  * Exercicio 1;
  * Fazer a tabuada do 5, 6.
- * 
+ *
  * Exercicio 2;
  * calcular as médias artimeticas, Ponderada e Harmonica.
  */
 
+echo "<h1>Tabuada do 5</h1>";
+
+echo "5 x 1 = " . (5 * 1) . "<br>";
+echo "5 x 2 = " . (5 * 2) . "<br>";
+echo "5 x 3 = " . (5 * 3) . "<br>";
+echo "5 x 4 = " . (5 * 4) . "<br>";
+echo "5 x 5 = " . (5 * 5) . "<br>";
+echo "5 x 6 = " . (5 * 6) . "<br>";
+echo "5 x 7 = " . (5 * 7) . "<br>";
+echo "5 x 8 = " . (5 * 8) . "<br>";
+echo "5 x 9 = " . (5 * 9) . "<br>";
+echo "5 x 10 = " . (5 * 10) . "<br>";
+
+echo "<h1>Tabuada do 6</h1>";
+
+echo "6 x 1 = " . (6 * 1) . "<br>";
+echo "6 x 2 = " . (6 * 2) . "<br>";
+echo "6 x 3 = " . (6 * 3) . "<br>";
+echo "6 x 4 = " . (6 * 4) . "<br>";
+echo "6 x 5 = " . (6 * 5) . "<br>";
+echo "6 x 6 = " . (6 * 6) . "<br>";
+echo "6 x 7 = " . (6 * 7) . "<br>";
+echo "6 x 8 = " . (6 * 8) . "<br>";
+echo "6 x 9 = " . (6 * 9) . "<br>";
+echo "6 x 10 = " . (6 * 10) . "<br>";
+
+echo "<h1>Média Aritmética</h1>";
+
+$number1 = 5 ;
+$number2 = 8 ;
+$number3 = 10 ;
+
+$mediaAritmetica = ($number1 + $number2 + $number3 ) / 3 ;
+echo "A Média Artimética é de  " . $mediaAritmetica . "<br>";
+
+echo "<h1>Média Ponderada</h1>";
+
+$number4 = 15 ;
+$number5 = 12 ;
+$number6 = 20 ;
+$mediaPonderada = (($number4 * $number1) + ($number5 * $number2) + ( $number6 * $number3)) / ($number4 + $number5 + $number6) ;
+echo "Média Ponderada : " . $mediaPonderada . "<br>" ;
+
+echo "<h1>Média Hârmonica</h1>" ;
+$mediaHarmonica = 3 / (( 1 / $number1) + ( 1 / $number2) + ( 1 / $number3 )) ;
+echo "Média Harmômica: " . $mediaHarmonica . "<br>" ;
