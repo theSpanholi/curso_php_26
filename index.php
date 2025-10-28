@@ -137,3 +137,38 @@ echo "Média Ponderada : " . $mediaPonderada . "<br>" ;
 echo "<h1>Média Hârmonica</h1>" ;
 $mediaHarmonica = 3 / (( 1 / $number1) + ( 1 / $number2) + ( 1 / $number3 )) ;
 echo "Média Harmômica: " . $mediaHarmonica . "<br>" ;
+
+//Calcular o volume de uma esfera com raio de 5cm
+//Dicas: Elevar ao cubo -> ** 3 = 8. PI = 3.14
+// FORMULA: 4/3 * PI * R ao cubo
+echo "<h1>Como calcular o volume de uma esfera?</h1>" ;
+CONST PI = 3.14;
+$raioAoCubo = 5**3;
+$fracao = 4/3;
+$volumeEsfera = $raioAoCubo * PI * $fracao;
+echo "O Volume da esfera é: $volumeEsfera<br>";
+
+//  sqrt (CALCULA A RAIZ QUADRADA DE UM NÚMERO, OU VARIAVEL)
+
+// Conveter graus Fahrenheit para Celsius. 95ºF -> ? (35º)
+echo "<h1>Fahrenheit para Celsius</h1>" ;
+
+$fh = 95;
+$celsius = ($fh - 32) / 1.8 ;
+
+echo "<br>A Conversão de $fh Farenheit, é de $celsius Celsius<br>" ;
+
+// Converter graus Celsius para Kelvin. 35ºC -> ?ºC.
+echo "<h1>Celsius para Kelvin</h1>" ;
+
+$kelvin = $celsius + 273.15;
+
+echo "<br>A conversão de $celsius Celsius, é de $kelvin Kelvin<br>" ;
+
+//Converter graus Kelvin para Celsius. ?ºK -> 35ºC.
+echo "<h1>Kelvin para Celsius</h1>" ;
+
+$celsius = $kelvin - 273.15;
+
+echo "<br>A conversão de $kelvin Kelvin, é de $celsius Celsius<br>" ;
+
