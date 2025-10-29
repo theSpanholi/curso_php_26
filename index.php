@@ -142,8 +142,9 @@ echo "Média Harmômica: " . $mediaHarmonica . "<br>" ;
 //Dicas: Elevar ao cubo -> ** 3 = 8. PI = 3.14
 // FORMULA: 4/3 * PI * R ao cubo
 echo "<h1>Como calcular o volume de uma esfera?</h1>" ;
+$raio = 5;
 CONST PI = 3.14;
-$raioAoCubo = 5**3;
+$raioAoCubo = $raio **3;
 $fracao = 4/3;
 $volumeEsfera = $raioAoCubo * PI * $fracao;
 echo "O Volume da esfera é: $volumeEsfera<br>";
@@ -172,3 +173,41 @@ $celsius = $kelvin - 273.15;
 
 echo "<br>A conversão de $kelvin Kelvin, é de $celsius Celsius<br>" ;
 
+/*
+$soma = 2/
+$soma += 5; // 7
+
+1 == 1 igual
+2 !=  3 diferente de igual a ( <> )
+1 < 2 menor que
+3 > 2 maior que
+0 <= 1 menor ou igual a
+6 >= 6 maior ou igual a
+
+7 >= 6
+$valor1 >= $valor2 // V
+
+E // &&
+$tenhoDinheiro && $tenhoVontadeTomarCafe
+
+OU // ||
+$tenhoDinheiro || $ganheiDinheiro
+
+TABELA VERDADE
+V V == V
+V F == F
+F V == F
+F F == F(v)
+*/
+
+$tenhoDinheiro = true;
+$tenhoVontadeTomarCafe = true;
+
+
+if ($tenhoDinheiro && $tenhoVontadeTomarCafe) {
+    echo "Vou tomar café<br>";
+}  else if ($tenhoDinheiro && !$tenhoVontadeTomarCafe) {
+        echo"Vou comprar chocolate<br>";
+}  else {
+        echo "nao tenho vontade de nada<br>";
+}
