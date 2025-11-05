@@ -15,9 +15,11 @@ $aviao; // null || undefined || d1d54d55555d4
 
 echo "<h1>SOMA</h1>";
 
-$aviao = "Boeing747";
-$valor1 = 10;
-$valor2 = 15;
+$aviao = "Boeing 1747";
+
+
+$valor2 = 10;
+$valor1 = 15;
 $soma = $valor1 + $valor2; //10 + 15 -> 25
 // mesma coisa
 $soma = $soma + 3; // 28
@@ -200,6 +202,8 @@ F V == F
 F F == F(v)
 */
 
+echo "<h1>Teste IF ELSE, café</h1>";
+
 $tenhoDinheiro = true;
 $tenhoVontadeTomarCafe = true;
 
@@ -211,3 +215,105 @@ if ($tenhoDinheiro && $tenhoVontadeTomarCafe) {
 }  else {
         echo "nao tenho vontade de nada<br>";
 }
+
+/*
+
+Simular o funcionamento de uma calculadora
+utilizar if, else if, else.
+Operadores: + - * /
+
+*/
+
+
+echo "<h1> Simulação de Calculadora</h1>";
+
+//Dados da calculadora
+$operador = "+";
+$numero1 = 8;
+$numero2 = 6;
+
+
+
+if ( $numero1 < $numero2 ) {
+        $valorTemporario = $numero1;
+        $numero1 = $numero2;
+        $numero2 = $valorTemporario;
+}
+else if ( $operador == "+" ) {
+        $resultado = $numero1 + $numero2;
+        echo "O valor da sua soma é de: $resultado " ;
+} 
+else if ( $operador == "-" ) {
+        $resultado = $numero1 - $numero2;
+        echo "O valor da sua subtração é de: $resultado " ;
+}
+else if ( $operador == "*") {
+        $resultado = $numero1 * $numero2;
+        echo "O valor da sua multiplicação é de: $resultado " ;
+}
+else if ( $operador == "/") {
+        $resultado = $numero1 / $numero2;
+        echo "O valor da sua divisão é de: $resultado " ;
+}else{
+        echo "Desculpe não foi possível resolver o seu problema!" ;
+}
+
+//Atividade 8, Página 15
+
+echo"<h1>Média de Notas, IF ELSE</h1>";
+
+$nota1 = 5;
+$nota2 = 0;
+$nota3 = 4;
+
+$mediaNota = ($nota1 + $nota2 + $nota3) / 3;
+
+if ($mediaNota >= 6) {
+        echo "Parabéns por passar de ano! A sua nota foi de: $mediaNota";
+}
+
+else {
+        echo "Você reprovou de ano, sua média foi abaixo de 6! Sua nota foi de: $mediaNota";
+}
+
+echo "<h1>Média Ponderada, IF ELSE</h1>";
+
+$valor1 = 10 ;
+$valor2 = 20 ;
+$valor3 = 30 ;
+$valor4 = 15 ;
+$valor5 = 12 ;
+$valor6 = 20 ;
+$mediaPonderada = (($valor4 * $valor1) + ($valor5 * $valor2) + ( $valor6 * $valor3)) / ($valor4 + $valor5 + $valor6) ;
+
+if ($mediaPonderada >= 50) {
+        echo "Parabéns! Você foi aprovado no curso! Sua pontução foi de: $mediaPonderada";
+}
+        else {
+                echo "Que pena você não atingiu a pontuação suficente! Sua pontução foi de: $mediaPonderada ";
+        }
+
+echo "<h1>Média Hârmonica, IF ELSE</h1>" ;
+$mediaHarmonica = 3 / (( 1 / $valor1) + ( 1 / $valor2) + ( 1 / $valor3 )) ;
+
+if ($mediaHarmonica >= 15) {
+        echo "Parabéns! Você foi passou no concurso! Sua pontução foi de: $mediaHarmonica";
+}
+        else {
+                echo "Que pena você não atingiu a pontuação suficente! Sua pontução foi de: $mediaHarmonica ";
+        }
+
+
+//Atividade 9, Página 16
+
+echo"<h1>Verificação de idade</h1>";
+
+$idade = 18;
+
+if ($idade >= 18 ) {
+        echo "O _______ , está aprovado, sua idade é de $idade";
+}
+else  { 
+        echo "O __________, não está aprovado sua idade é menor do que a permitida ";
+}
+
