@@ -224,8 +224,9 @@ Operadores: + - * /
 
 */
 
+echo "<h1> Calculadoras </h1>";
 
-echo "<h1> Simulação de Calculadora</h1>";
+echo "<h3> Simulação de Calculadora, IF ELSE</h3>";
 
 //Dados da calculadora
 $operador = "+";
@@ -258,9 +259,42 @@ else if ( $operador == "/") {
         echo "Desculpe não foi possível resolver o seu problema!" ;
 }
 
+//Dados da calculadora SWITCH CASE
+
+echo "<h3>Simulador de Calculadora, SWITCH CASE</h3>";
+
+$operador = "+";
+$numero1 = 8;
+$numero2 = 6;
+
+switch($operador) {
+        case "+":
+                $resultado = $numero1 + $numero2;
+                echo "O valor da sua soma é de: $resultado " ;
+                break;
+        case "-":
+                $resultado = $numero1 - $numero2;
+                echo "O valor da sua subtração é de: $resultado " ;
+                break;
+        case "*":
+                $resultado = $numero1 * $numero2;
+                echo "O valor da sua multiplicação é de: $resultado " ;
+                break;
+        case "/":
+                $resultado = $numero1 / $numero2;
+                echo "O valor da sua divisão é de: $resultado " ;
+                break;
+        default:
+                echo "O operador informado não é valido!";
+                break;
+}
+
+
 //Atividade 8, Página 15
 
-echo"<h1>Média de Notas, IF ELSE</h1>";
+echo "<h1>MÉDIAS, IF ELSE</h1>";
+
+echo "<h3>Média de Notas, IF ELSE</h3>";
 
 $nota1 = 5;
 $nota2 = 0;
@@ -276,7 +310,7 @@ else {
         echo "Você reprovou de ano, sua média foi abaixo de 6! Sua nota foi de: $mediaNota";
 }
 
-echo "<h1>Média Ponderada, IF ELSE</h1>";
+echo "<h3>Média Ponderada, IF ELSE</h3>";
 
 $valor1 = 10 ;
 $valor2 = 20 ;
@@ -293,7 +327,7 @@ if ($mediaPonderada >= 50) {
                 echo "Que pena você não atingiu a pontuação suficente! Sua pontução foi de: $mediaPonderada ";
         }
 
-echo "<h1>Média Hârmonica, IF ELSE</h1>" ;
+echo "<h3>Média Hârmonica, IF ELSE</h3>" ;
 $mediaHarmonica = 3 / (( 1 / $valor1) + ( 1 / $valor2) + ( 1 / $valor3 )) ;
 
 if ($mediaHarmonica >= 15) {
@@ -317,3 +351,6 @@ else  {
         echo "O __________, não está aprovado sua idade é menor do que a permitida ";
 }
 
+
+
+//PAGINA 15, EX 5
