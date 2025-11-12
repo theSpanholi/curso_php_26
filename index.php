@@ -417,7 +417,7 @@ for ($contadorDecrescente = 10; $contadorDecrescente >= 0; $contadorDecrescente-
 
 //Calcular o fatorial de um numero. EX: calcular o fatorial de 5 = 120.
 
-echo"<h2>Valor Fatorial</h2>";
+echo"<h2>Valor Fatorial: Looping </h2>";
 
 $numeroFatorial= 6;
 $antecessor = $numeroFatorial -1;
@@ -428,4 +428,19 @@ for ($contadorFatorial = $antecessor; $contadorFatorial >= 1; $contadorFatorial-
 }
 
 //  1  001
-// -1  1001
+// -1  1001 
+
+echo"<h2>Valor Fatorial: While</h2>";
+
+$numeroFatorial= 6;
+$antecessor = $numeroFatorial -1;
+$contadorFatorial = $antecessor;
+
+while ($contadorFatorial >= 1){
+        echo"<br>";
+        echo"Exibição dos valores fatoriais : $numeroFatorial x $contadorFatorial = " . $numeroFatorial *= $contadorFatorial;
+
+        $contadorFatorial--;
+}
+
+// TEMA DE CASA, FAZER
