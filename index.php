@@ -348,9 +348,84 @@ if ($idade >= 18 ) {
         echo "O _______ , está aprovado, sua idade é de $idade";
 }
 else  { 
-        echo "O __________, não está aprovado sua idade é menor do que a permitida ";
+        echo "O ________ , não está aprovado sua idade, $idade, é menor do que a permitida ";
 }
 
 
-
 //PAGINA 15, EX 5
+
+ echo"<h1>Verificador de número par ou ímpar</h1>";
+ $num =2;
+ $restoDivisao = $num % 2;
+
+ if($restoDivisao == 0){
+        echo "O $num é par";
+} else {
+        echo "O $num é ímpar";
+}
+
+echo"<h1>LOOPS</h1>";
+// $contar = $a +1; || $contar +=1; || $contar++;
+
+echo"<h2>Calculadora LOOP</h2>";
+
+$numero = 6;
+for ($contar = 1;$contar <= 10; $contar++) {
+        echo"<br>";
+        echo"$numero X $contar = " . $numero * $contar;
+}
+
+/*      
+        --PULA O NÚMERO 5, continue = pular
+        if($contar == 5) {
+              continue;   =     X
+        }
+         
+        --IDENTIFICA SE O NÚMERO É PAR OU ÍMPAR
+        $restoDivisao = $contar % 2;
+        $ehDivisaoExata = $restoDivisao == 0;
+
+        if($ehDivisaoExata){
+                echo "O $contar é par";
+        } else {
+                echo "O $contar é ímpar";
+        }
+        --PARA A CONTAGEM NO 5 LOOP, BREAK = PARAR
+        if ($contar == 5) {
+                break
+        }
+}
+*/
+
+//Exibir os numeros pares de 1 até 50;
+
+echo"<h2>Sequênia de número par</h2>";
+
+for ($contadorPar = 0; $contadorPar <=50; $contadorPar = $contadorPar + 2){
+        echo"<br>";
+        echo"Sequência de número par: $contadorPar";
+}
+
+//Exibir o os numeros em ordem Decrescente(Maior para Menor - DESC) de 10 a 0
+
+echo"<h2>Ordem Decrescente</h2>";
+
+for ($contadorDecrescente = 10; $contadorDecrescente >= 0; $contadorDecrescente-- ) {
+        echo"<br>";
+        echo"Exibição de números em ordem descrescente: $contadorDecrescente";
+}
+
+//Calcular o fatorial de um numero. EX: calcular o fatorial de 5 = 120.
+
+echo"<h2>Valor Fatorial</h2>";
+
+$numeroFatorial= 6;
+$antecessor = $numeroFatorial -1;
+
+for ($contadorFatorial = $antecessor; $contadorFatorial >= 1; $contadorFatorial-- ) {
+        echo"<br>";
+        echo"Exibição dos valores fatoriais : $numeroFatorial x $contadorFatorial = " . $numeroFatorial *= $contadorFatorial; 
+}
+
+//  1  001
+// -1  1001
