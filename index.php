@@ -1,6 +1,6 @@
 <?php
 
-// $aviao; // null || undefined || d1d54d55555d4
+ $aviao; // null || undefined || d1d54d55555d4
 
 // /**
 //  * string 'texto qualquer' || 'A' || "A"
@@ -354,15 +354,15 @@
 
 // //PAGINA 15, EX 5
 
-//  echo"<h1>Verificador de número par ou ímpar</h1>";
-//  $num =2;
-//  $restoDivisao = $num % 2;
+// echo"<h1>Verificador de número par ou ímpar</h1>";
+// $num =2;
+// $restoDivisao = $num % 2;
 
-//  if($restoDivisao == 0){
-//         echo "O $num é par";
-// } else {
-//         echo "O $num é ímpar";
-// }
+// if($restoDivisao == 0){
+//          echo "O $num é par";
+//  } else {
+//          echo "O $num é ímpar";
+//  }
 
 // echo"<h1>LOOPS</h1>";
 // // $contar = $a +1; || $contar +=1; || $contar++;
@@ -371,9 +371,9 @@
 
 // $numero = 6;
 // for ($contar = 1;$contar <= 10; $contar++) {
-//         echo"<br>";
-//         echo"$numero X $contar = " . $numero * $contar;
-// }
+//          echo"<br>";
+//          echo"$numero X $contar = " . $numero * $contar;
+//  }
 
 // /*      
 //         --PULA O NÚMERO 5, continue = pular
@@ -404,7 +404,7 @@
 // for ($contadorPar = 0; $contadorPar <=50; $contadorPar = $contadorPar + 2){
 //         echo"<br>";
 //         echo"Sequência de número par: $contadorPar";
-// }
+//  }
 
 // //Exibir o os numeros em ordem Decrescente(Maior para Menor - DESC) de 10 a 0
 
@@ -415,7 +415,7 @@
 //         echo"Exibição de números em ordem descrescente: $contadorDecrescente";
 // }
 
-// //Calcular o fatorial de um numero. EX: calcular o fatorial de 5 = 120.
+// // //Calcular o fatorial de um numero. EX: calcular o fatorial de 5 = 120.
 
 // echo"<h2>Valor Fatorial: Looping </h2>";
 
@@ -425,7 +425,7 @@
 // for ($contadorFatorial = $antecessor; $contadorFatorial >= 1; $contadorFatorial-- ) {
 //         echo"<br>";
 //         echo"Exibição dos valores fatoriais : $numeroFatorial x $contadorFatorial = " . $numeroFatorial *= $contadorFatorial; 
-// }
+//  }
 
 // //  1  001
 // // -1  1001 
@@ -437,13 +437,13 @@
 // $contadorFatorial = $antecessor;
 
 // while ($contadorFatorial >= 1){
-//         echo"<br>";
-//         echo"Exibição dos valores fatoriais : $numeroFatorial x $contadorFatorial = " . $numeroFatorial *= $contadorFatorial;
+//          echo"<br>";
+//          echo"Exibição dos valores fatoriais : $numeroFatorial x $contadorFatorial = " . $numeroFatorial *= $contadorFatorial;
 
-//         $contadorFatorial--;
-// }
+//          $contadorFatorial--;
+//  }
 
-// // TEMA DE CASA, FAZER AS MESMAS ATIVIDADE UTILIZANDO O WHILE
+//  // TEMA DE CASA, FAZER AS MESMAS ATIVIDADE UTILIZANDO O WHILE
 
 // echo "<h1>Tema de Casa TROCANDO o FOR por WHILE</h1>";
 
@@ -453,66 +453,136 @@
 // $numeroSeletor = 1;
 
 // while ($numeroSeletor <= 10){
-//         echo "<br>";
-//         echo "$numeroSeletor x $numeroTabuada :" . $numeroSeletor * $numeroTabuada;
+//          echo "<br>";
+//          echo "$numeroSeletor x $numeroTabuada :" . $numeroSeletor * $numeroTabuada;
 
-//         $numeroSeletor++;
-// }
+//          $numeroSeletor++;
+//  }
 
-// $contadorDePares = 0;
+// echo "<h2>Contador de Pares While</h2>";
 
-// while($contadorDePares <=50){
-//         echo "<br>";
-//         echo "A sequência de números pares é de : $contadorDePares";
+//  $contadorDePares = 0;
 
-//         $contadorDePares+= 2;
-// }
+//  while($contadorDePares <=50){
+//          echo "<br>";
+//          echo "A sequência de números pares é de : $contadorDePares";
+
+//          $contadorDePares+= 2;
+//  }
 
 // echo "<h2>Contador Decrescente WHILE</h2>";
 
 // $contadorDecrescente = 10;
 
 // while ($contadorDecrescente >= 0 ){
-//         echo"<br>";
-//         echo "A sequência decrescente é de: $contadorDecrescente";
+//          echo"<br>";
+//          echo "A sequência decrescente é de: $contadorDecrescente";
 
-//         $contadorDecrescente--;
+//          $contadorDecrescente--;
+//  }
+
+// /**
+//  * Fazer o mesmo exercicio utilizando FOR e WHILE.
+//  * Exercicio: Encontrar os 5 primeiros números primos.
+//  * Primos: 2, 3, 5, 7, 11
+//  */
+
+// echo "<h3>Números Primos FOR</h3>";
+
+// $contPrimos = 0;
+// $numeroAvaliado = 7;
+// $antecessor = $numeroAvaliado - 1;
+
+// for ($divisor = 2; $divisor <= $antecessor; $divisor++) {
+        
+//         if($contPrimos == 5) {
+//                 break;
+//         }
+        
+//         $restoDivisao = $numeroAvaliado % $divisor;
+//         $ehDivisaoExata = $restoDivisao == 0;
+
+//         if($ehDivisaoExata) {
+//                 $numeroAvaliado++;
+//                 $antecessor = $numeroAvaliado -1;
+//                 continue;
+//         }
+
+//         if($divisor == $antecessor) {
+//                 echo "<br>";
+//                 echo "O Número $numeroAvaliado é primo";
+//                 $numeroAvaliado++;
+//                 $antecessor = $numeroAvaliado - 1;
+//                 $contPrimos++;
+//                 $divisor = 1;
+//         }
+
 // }
 
-/**
- * Fazer o mesmo exercicio utilizando FOR e WHILE.
- * Exercicio: Encontrar os 5 primeiros números primos.
- * Primos: 2, 3, 5, 7, 11
- */
+// echo "<h3>Números Primos WHILE</h3>";
 
-echo "<h1>Números Primos FOR</h1>";
 
-$numeroAvaliado = 7;
-$antecessor = $numeroAvaliado - 1;
+// $numeroAvaliado = 10;
+// $antecessor = $numeroAvaliado - 1;
+// $contPrimos = 0;
+// $divisor = 2;
+
+// while ($divisor <= $antecessor) {
+
+//         if($contPrimos == 5) {
+//                 break;
+//         }
+
+//         $restoDivisao = $numeroAvaliado % $divisor;
+//         $ehDivisaoExata = $restoDivisao == 0;
+
+//         if($ehDivisaoExata) {
+//                 $numeroAvaliado++;
+//                 $antecessor = $numeroAvaliado -1;
+//                 $divisor = 2;
+//                 continue;
+//         }
+
+//         if($divisor == $antecessor) {
+//                 echo "<br>";
+//                 echo "O Número $numeroAvaliado é primo";
+//                 $numeroAvaliado++;
+//                 $antecessor = $numeroAvaliado - 1;
+//                 $contPrimos++;
+//                 $divisor = 2;
+//                 continue;
+//         }
+
+//         $divisor++;
+// }
+
+echo "<h3>FOR, FOR</h3>";
+
 $contPrimos = 0;
+$numeroAvaliado = 3;
 
-for ($divisor = 2; $divisor <= $antecessor; $divisor++) {
-        
-        if($contPrimos == 5) {
-                break;
-        }
-        
-        $restoDivisao = $numeroAvaliado % $divisor;
-        $ehDivisaoExata = $restoDivisao == 0;
+for ($numeroAvaliado = 10; $contPrimos < 5; $numeroAvaliado++) { 
+             
+        $antecessor = $numeroAvaliado - 1;
+        $ehPrimo= true;
 
-        if($ehDivisaoExata) {
-                $numeroAvaliado++;
-                $antecessor = $numeroAvaliado -1;
-                continue;
-        }
+        for($divisor = 2; $divisor <= $antecessor; $divisor++){
 
-        if($divisor == $antecessor) {
+                $restoDivisao = $numeroAvaliado % $divisor;
+                $ehDivisaoExata = $restoDivisao == 0;
+
+                if($ehDivisaoExata) {
+                        $ehPrimo = false;
+                        break;
+                }
+
+        } // Fim FOR Dentro
+
+        if ($ehPrimo) {
+
                 echo "<br>";
                 echo "O Número $numeroAvaliado é primo";
-                $numeroAvaliado++;
-                $antecessor = $numeroAvaliado - 1;
                 $contPrimos++;
-                $divisor = 1;
         }
 
-}
+} // Fim FOR Fora
