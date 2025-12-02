@@ -586,3 +586,40 @@ for ($numeroAvaliado = 10; $contPrimos < 5; $numeroAvaliado++) {
         }
 
 } // Fim FOR Fora
+
+echo"<h3>WHILE, WHILE</h3>";
+
+$contPrimos = 0;
+$numeroAvaliado = 5;
+$divisor = 2;
+
+while($contPrimos < 5){
+        
+        $antecessor = $numeroAvaliado - 1;
+        $ehPrimo= true;
+
+        while($divisor <= $antecessor) {
+
+                $restoDivisao = $numeroAvaliado % $divisor;
+                $ehDivisaoExata = $restoDivisao == 0;
+                
+                if($ehDivisaoExata) {
+                        $ehPrimo = false;
+                        $divisor = 2;
+                        break;
+                }
+
+                $divisor++;
+
+        }//FIM while DENTRO
+
+
+        if ($ehPrimo) {
+                echo "<br>";
+                echo "O Número $numeroAvaliado é primo";
+                $contPrimos++;
+                $divisor = 2;
+        }
+
+        $numeroAvaliado++;
+}// FIM while FORA
