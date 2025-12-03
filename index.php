@@ -623,3 +623,5 @@ while($contPrimos < 5){
 
         $numeroAvaliado++;
 }// FIM while FORA
+
+
