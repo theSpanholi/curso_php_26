@@ -69,8 +69,8 @@
 // $numeroAvaliado = 3;
 // $numerosPrimosAchados = [];
 
-// for ($numeroAvaliado = 10; $contPrimos < 5; $numeroAvaliado++) { 
-             
+// for ($numeroAvaliado = 10; $contPrimos < 5; $numeroAvaliado++) {
+
 //         $antecessor = $numeroAvaliado - 1;
 //         $ehPrimo= true;
 
@@ -83,7 +83,7 @@
 //                         $ehPrimo = false;
 //                         break;
 //                 }
-                
+
 //         } // Fim FOR Dentro
 
 //         if ($ehPrimo) {
@@ -138,16 +138,16 @@
 /**
  * Dada uma palavra informada pelo usuario,
  * verificar se a mesma forma um palíndromo.
- * 
+ *
  * ex: ana, subi no onibus, kaik, natan.
- * 
+ *
  * Dica: Um for dentro do outro.
  */
 
 
 
 // for($i = 0; $i < $tamanho; $i++) {
-    
+
 //     $letraIndo = $palavra[$i];
 //     $tamanhoVolta = $tamanho - 1;
 
@@ -156,11 +156,11 @@
 //     }
 
 //     for($j = $tamanho - $tamanhoVolta ; $j >= 0; $j-- ) {
-        
+
 //         $letraVoltando = $palavra[$j];
 //         $saoIguais = $letraIndo == $letraVoltando;
-        
-        
+
+
 //         if ($saoIguais == false) {
 //             $ehPalindromo = false;
 //             break;
@@ -193,23 +193,50 @@ if ($ehPalindromo) {
 
 /**
  * Contar quantas vogais existem em uma frase.
- * 
+ *
  * $vogais = ['a', 'e', 'i', 'o' ,'u'];
  * $vogalMinuscula = strtolower($palavra[$i]);
- * 
+ *
  * in_array();
- * 
+ *
  * $existeVogal = in_array($vogalMincuscula, $vogais);
- * 
+ *
  * Ex:
  * $palavra = "infoserv";
  * $palavra = "infoserv";
- * 
+ *
  * Saída esperada: 3 vogais;
  */
 
 
 /**
  *Contar quantas vogais existem em uma frase ou palavra.
- *Totalizando a quantidade de cada uma, ou seja, quantos A, quantos E. 
+ *Totalizando a quantidade de cada uma, ou seja, quantos A, quantos E.
 */
+
+$vogais = ['a', 'e', 'i', 'o' ,'u'];
+$contadorVogais = 0;
+$vogalMinuscula = strtolower($palavra[$i]);
+$quantidadePorVogal = [
+    'a' => 0,
+    'e' => 0,
+    'i' => 0,
+    'o' => 0,
+    'u' => 0
+];
+$existeVogal = in_array($vogalMincuscula, $vogais);
+
+for ($i = 0; $i < strlen($palavra); $i++) {
+    $letra = strtolower($palavra[$i]);
+
+//Verificador de vogal, aqui irá verificar se A ou não A Vogal
+    if (in_array($letra, $vogais)) {
+        $contadorVogais++;
+        $quantidadePorVogal[$letra]++;
+    }
+}
+
+// Saídas
+echo "Total de vogais: <br>" . $contadorVogais ;
+
+echo implode('<br>', $quantidadePorVogal);
