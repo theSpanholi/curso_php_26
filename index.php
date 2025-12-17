@@ -151,6 +151,45 @@
 // $volumeEsfera = $raioAoCubo * PI * $fracao;
 // echo "O Volume da esfera é: $volumeEsfera<br>";
 
+// // Calcular a Area de um triangulo que tenha uma base de 8cm
+// // e sua altura de 6cm.
+// $base = 8;
+// $altura = 6;
+// $areaTriangulo = ($base * $altura) / 2;
+// echo "<br>A area do triangulo é: $areaTriangulo<br>";
+
+// // Calcular quantos segundos tem em 2 horas e 30 minutos.
+// $horas = 2;
+// $minutos = 30;
+// $minutosParaSegundos = 30 * 60; // 1800
+
+// $horasParaMinutos = 2 * 60; // 120
+// $horasSegundos = $horasParaMinutos * 60; // 7200
+
+// $totalEmSegundos = $horasSegundos + $minutosParaSegundos;  // 7200 + 1800 = 9000
+// echo "<br>O Total em segundos é: $totalEmSegundos<br>";
+
+// // Calcular IMC de uma Pessoa. Podem usar quaisquer valores.
+// $peso = 70;
+// $altura = 1.88;
+// $imc = round( $peso / ($altura ** 2), 2 );
+// echo "<br>O IMC é: $imc<br>";
+
+// // Aplicar a formula de Bhaskara para a seguinte equação do segundo grau:
+// // $a = 1; $b = -3; $c =-4;
+// // sqrt -> pow -> ** = potenciaciao
+// $a = 1; 
+// $b = -3; 
+// $c =-4;
+
+// $delta = ($b ** 2) - (4 * $a * $c); // OU
+// $delta = ($b * $b) - (4 * $a * $c);
+
+// $x1 = (-$b + sqrt($delta)) / (2 * $a);
+// $x2 = (-$b - sqrt($delta)) / (2 * $a);
+// echo "<br>O X1 é: $x1 e o X2 é: $x2<br>";
+
+
 // //  sqrt (CALCULA A RAIZ QUADRADA DE UM NÚMERO, OU VARIAVEL)
 
 // // Conveter graus Fahrenheit para Celsius. 95ºF -> ? (35º)

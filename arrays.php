@@ -27,7 +27,6 @@
 // print_r($numeros);
 // echo"<br>";
 // var_dump($numeros);
-
 // echo "<h3>Implode</h3>";
 // echo implode(", ",$numeros);
 
@@ -172,23 +171,23 @@
 //     }
 // }
 
-echo "<h3>Palíndromo</h3>";
+// echo "<h3>Palíndromo</h3>";
 
-$palavra = "somos";
-$tamanho = strlen($palavra);// 3
-$palavraInvertida = "";
+// $palavra = "somos";
+// $tamanho = strlen($palavra);// 3
+// $palavraInvertida = "";
 
-for($i = $tamanho; $i >= 0; $i--){
-    $palavraInvertida .= $palavra[$i];
-}
+// for($i = $tamanho; $i >= 0; $i--){
+//     $palavraInvertida .= $palavra[$i];
+// }
 
-$ehPalindromo = $palavra === $palavraInvertida;
+// $ehPalindromo = $palavra === $palavraInvertida;
 
-if ($ehPalindromo) {
-    echo "A palavra $palavra é palindromo";
-} else {
-    echo "A palavra $palavra não é um palindromo";
-}
+// if ($ehPalindromo) {
+//     echo "A palavra $palavra é palindromo";
+// } else {
+//     echo "A palavra $palavra não é um palindromo";
+// }
 
 
 /**
@@ -214,29 +213,16 @@ if ($ehPalindromo) {
  *Totalizando a quantidade de cada uma, ou seja, quantos A, quantos E.
 */
 
+$palavra = "Cavalo";
 $vogais = ['a', 'e', 'i', 'o' ,'u'];
 $contadorVogais = 0;
-$vogalMinuscula = strtolower($palavra[$i]);
-$quantidadePorVogal = [
-    'a' => 0,
-    'e' => 0,
-    'i' => 0,
-    'o' => 0,
-    'u' => 0
-];
-$existeVogal = in_array($vogalMincuscula, $vogais);
+$quantidadePorVogal = [];
 
-for ($i = 0; $i < strlen($palavra); $i++) {
-    $letra = strtolower($palavra[$i]);
-
-//Verificador de vogal, aqui irá verificar se A ou não A Vogal
-    if (in_array($letra, $vogais)) {
-        $contadorVogais++;
-        $quantidadePorVogal[$letra]++;
-    }
+for ($i = 0; $i <= strlen($palavra); $i++) {
+    $palavraMinusculo = strtolower($palavra[$i]);
 }
 
-// Saídas
-echo "Total de vogais: <br>" . $contadorVogais ;
-
-echo implode('<br>', $quantidadePorVogal);
+// Verificador de vogal, aqui irá verificar se A ou não A Vogal
+// 'in_array' ira verificar se na variavel $palavraMinuscula, 
+// existe alguma letra que está dentro do array $vogais
+// se estiver irá adicionar um no total de vogais, e adicionar tambem na vogal especifica encontrada
