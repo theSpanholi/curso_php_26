@@ -26,7 +26,7 @@
 
 echo "<h3>Calcular Segundos</h3>";
 
-function calcularSegundosEmHoras($resultadoSegundos){
+function calcularSegundosEmHoras(){
     $horas = 2;
     $minutos = 30;
 
@@ -37,9 +37,11 @@ function calcularSegundosEmHoras($resultadoSegundos){
 
     $resultadoSegundos = $horasSegundos + $minutosParaSegundos;
 
-    echo $resultadoSegundos;
-}
-calcularSegundosEmHoras($resultadoSegundos);
+    return $resultadoSegundos;
+};
+$resultado = calcularSegundosEmHoras();
+echo $resultado;
+
 
 echo "<h3>IMC</h3>";
 
