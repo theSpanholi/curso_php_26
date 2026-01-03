@@ -82,7 +82,7 @@ function calculadora($valor1, $valor2, $operador){
 
         case '-';
             return $valor1 - $valor2;
-        
+
         case '*';
             return $valor1 * $valor2;
 
@@ -95,3 +95,39 @@ function calculadora($valor1, $valor2, $operador){
 }
 
 echo calculadora(8,2,'*');
+
+echo "<h2>Tema das Férias</h2>";
+
+function calcularTempoDoJogo($hora,$minuto) {
+    $minuto += 90;
+
+    $hora += intdiv($minuto, 60); // intdiv ?? É divisão inteira, Ela ignora os decimais
+    $minuto = $minuto % 60;
+
+     if ($hora >= 24) {
+        $hora -= 24;
+     }
+
+    return sprintf('%02d:%02d:00', $hora, $minuto);
+}
+
+echo calcularTempoDoJogo(23, 45);
+
+echo "<h2>Tema de Casa: Com Acréscimos</h2>";
+
+function terminoPartidaComAcrescimo($hora, $minuto, $acrescimos) {
+
+    // soma 90 minutos + acréscimos
+    $minuto += 90 + $acrescimos;
+
+    $hora += intdiv($minuto, 60);
+    $minuto = $minuto % 60;
+
+    if ($hora >= 24) {
+        $hora -= 24;
+    }
+
+    return sprintf('%02d:%02d:00', $hora, $minuto);
+}
+
+echo terminoPartidaComAcrescimo(23, 45, 5);

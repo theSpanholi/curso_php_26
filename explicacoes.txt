@@ -1,0 +1,34 @@
+exercicio férias,
+Antes da conversão:
+Hora: 23
+Minuto: 135 ❌
+
+Depois:
+Hora: 25
+Minuto: 15 ✔
+
+Depois disso, o código só precisa ajustar:
+25 - 24 = 1
+
+Resultado final:
+01:15
+
+O que é intdiv?
+-É divisão inteira
+-Ela ignora os decimais
+
+$hora += intdiv($minuto, 60);
+135 ÷ 60 = 2,25 == arredonda para 2
+
+O modelo (primeiro parâmetro)
+'%02d:%02d:00'
+
+🔸 %02d
+-%d → número inteiro
+-2 → sempre usar 2 dígitos
+-0 → completa com zero à esquerda
+
+Exemplos:
+-1 vira 01
+-9 vira 09
+-12 continua 12
