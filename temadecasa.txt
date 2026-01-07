@@ -1,0 +1,4 @@
+Criar 3 novos objetos/classes que representam os animais abaixo
+Cachorro, Gato e Papagaio
+
+Criar um objeto/classe que representa a sala de aula.
