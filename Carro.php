@@ -3,7 +3,7 @@
  * POO || OOP
  * Programacao Orientada a Objeto
  * Caracteristicas: Propriedades || Atributos.
- * */ 
+ * */
 
 define("QUEBRA_LINHA", "<br>");
 
@@ -102,19 +102,82 @@ echo $objCarro;
 
 echo"<h2>Tema de casa</h2>";
 
+echo "<h3>Cachorro</h3>";
 class Cachorro {
-    public $raça;
+    public $raca;
     public $idade;
-    public $pelugem;
+    public $corPelugem;
     public $alimento;
     public $caracteristicaPrincipal;
-    public $estado;
+    private $graveto = true;
+
+    public function brincarComCachorro($energia = true){
+        if(!$energia){
+            echo "Deixe o cachorro descansar." . QUEBRA_LINHA;
+        }
+        else if (!$this->graveto){
+            echo "Voce já jogou o Graveto, espere o cachorro voltar." . QUEBRA_LINHA;
+        } else {
+            echo "Jogue o graveto para o cachorro." . QUEBRA_LINHA;
+        }
+    }
+    public function __toString(){
+        $dadosDoCachorro = "Raça:$this->raca" . QUEBRA_LINHA .
+        "Pelugem:$this->corPelugem" . QUEBRA_LINHA .
+        "Idade:$this->idade" . QUEBRA_LINHA .
+        "Alimento:$this->alimento" . QUEBRA_LINHA .
+        "Caractéristica:$this->caracteristicaPrincipal" . QUEBRA_LINHA;
+
+        return $dadosDoCachorro;
+    }
 }
 
 $objCachorro = new Cachorro();
 
-$objCachorro->raça = "bordercolie";
+$objCachorro->raca = "Border-collie";
 $objCachorro->idade = "8";
-$objCachorro->pelugem = "Vermelho-merle";
+$objCachorro->corPelugem = "Vermelho-merle";
 $objCachorro->alimento = "Ração";
 $objCachorro->caracteristicaPrincipal = "Inteligência e Energia";
+
+$objCachorro->brincarComCachorro();
+echo $objCachorro;
+
+echo "<h3>Gato</h3>";
+
+class Gato {
+    public $racaGato;
+    public $idadeGato;
+    public $pelugemGato;
+    public $alimentoGato;
+    public $caracteristicaPrincipalGato;
+
+    public function carinhoNoGato($alcance = false){
+        if(!$alcance){
+            echo "Pode fazer carinho";
+        } else {
+            echo "Chame o Gato para fazer carinho";
+        }
+    }
+
+    public function __tooString(){
+        $dadosDoGato = "Raça:$this->racaGato" . QUEBRA_LINHA .
+        "Idade:$this->idadeGato" . QUEBRA_LINHA .
+        "Pelugem:$this->pelugemGato" . QUEBRA_LINHA .
+        "Alimento:$this->alimentoGato" . QUEBRA_LINHA .
+        "Caractéristicas:$this->caracteristicaPrincipalGato";
+
+        return $dadosDoGato;
+    }
+
+
+
+}
+
+$objGato = new Gato();
+
+$objGato->racaGato = "Persa";
+$objGato->idadeGato = "5";
+$objGato->pelugemGato = "Longa, densa, sedosa e volumosa";
+$objGato->caracteristicaPrincipalGato = "Calmo e Dócil";
+$objGato->alimentoGato = "Rações Super Premium específicas para a raça";
