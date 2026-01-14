@@ -102,82 +102,124 @@ echo $objCarro;
 
 echo"<h2>Tema de casa</h2>";
 
-echo "<h3>Cachorro</h3>";
-class Cachorro {
-    public $raca;
-    public $idade;
-    public $corPelugem;
-    public $alimento;
-    public $caracteristicaPrincipal;
-    private $graveto = true;
+// echo "<h3>Cachorro</h3>";
+// class Cachorro {
+//     public $raca;
+//     public $idade;
+//     public $corPelugem;
+//     public $alimento;
+//     public $caracteristicaPrincipal;
+//     private $graveto = true;
 
-    public function brincarComCachorro($energia = true){
-        if(!$energia){
-            echo "Deixe o cachorro descansar." . QUEBRA_LINHA;
-        }
-        else if (!$this->graveto){
-            echo "Voce já jogou o Graveto, espere o cachorro voltar." . QUEBRA_LINHA;
-        } else {
-            echo "Jogue o graveto para o cachorro." . QUEBRA_LINHA;
-        }
-    }
-    public function __toString(){
-        $dadosDoCachorro = "Raça:$this->raca" . QUEBRA_LINHA .
-        "Pelugem:$this->corPelugem" . QUEBRA_LINHA .
-        "Idade:$this->idade" . QUEBRA_LINHA .
-        "Alimento:$this->alimento" . QUEBRA_LINHA .
-        "Caractéristica:$this->caracteristicaPrincipal" . QUEBRA_LINHA;
+//     public function brincarComCachorro($energia = true){
+//         if(!$energia){
+//             echo "Deixe o cachorro descansar." . QUEBRA_LINHA;
+//         }
+//         else if (!$this->graveto){
+//             echo "Voce já jogou o Graveto, espere o cachorro voltar." . QUEBRA_LINHA;
+//         } else {
+//             echo "Jogue o graveto para o cachorro." . QUEBRA_LINHA;
+//         }
+//     }
+//     public function __toString(){
+//         $dadosDoCachorro = "Raça:$this->raca" . QUEBRA_LINHA .
+//         "Pelugem:$this->corPelugem" . QUEBRA_LINHA .
+//         "Idade:$this->idade" . QUEBRA_LINHA .
+//         "Alimento:$this->alimento" . QUEBRA_LINHA .
+//         "Caractéristica:$this->caracteristicaPrincipal" . QUEBRA_LINHA;
 
-        return $dadosDoCachorro;
-    }
-}
+//         return $dadosDoCachorro;
+//     }
+// }
 
-$objCachorro = new Cachorro();
+// $objCachorro = new Cachorro();
 
-$objCachorro->raca = "Border-collie";
-$objCachorro->idade = "8";
-$objCachorro->corPelugem = "Vermelho-merle";
-$objCachorro->alimento = "Ração";
-$objCachorro->caracteristicaPrincipal = "Inteligência e Energia";
+// $objCachorro->raca = "Border-collie";
+// $objCachorro->idade = "8";
+// $objCachorro->corPelugem = "Vermelho-merle";
+// $objCachorro->alimento = "Ração";
+// $objCachorro->caracteristicaPrincipal = "Inteligência e Energia";
 
-$objCachorro->brincarComCachorro();
-echo $objCachorro;
+// $objCachorro->brincarComCachorro();
+// echo $objCachorro;
 
-echo "<h3>Gato</h3>";
+// echo "<h3>Gato</h3>";
 
-class Gato {
-    public $racaGato;
-    public $idadeGato;
-    public $pelugemGato;
-    public $alimentoGato;
-    public $caracteristicaPrincipalGato;
+// class Gato {
+//     public $racaGato;
+//     public $idadeGato;
+//     public $pelugemGato;
+//     public $alimentoGato;
+//     public $caracteristicaPrincipalGato;
 
-    public function carinhoNoGato($alcance = false){
-        if(!$alcance){
-            echo "Pode fazer carinho";
-        } else {
-            echo "Chame o Gato para fazer carinho";
-        }
-    }
+//     public function carinhoNoGato($alcance = false){
+//         if(!$alcance){
+//             echo "Pode fazer carinho". QUEBRA_LINHA;
+//         } else {
+//             echo "Chame o Gato para fazer carinho" .    QUEBRA_LINHA;
+//         }
+//     }
 
-    public function __tooString(){
-        $dadosDoGato = "Raça:$this->racaGato" . QUEBRA_LINHA .
-        "Idade:$this->idadeGato" . QUEBRA_LINHA .
-        "Pelugem:$this->pelugemGato" . QUEBRA_LINHA .
-        "Alimento:$this->alimentoGato" . QUEBRA_LINHA .
-        "Caractéristicas:$this->caracteristicaPrincipalGato";
+//     public function __toString(){
+//         $dadosDoGato = "Raça:$this->racaGato" . QUEBRA_LINHA .
+//         "Idade:$this->idadeGato" . QUEBRA_LINHA .
+//         "Pelugem:$this->pelugemGato" . QUEBRA_LINHA .
+//         "Alimento:$this->alimentoGato" . QUEBRA_LINHA .
+//         "Caractéristicas:$this->caracteristicaPrincipalGato". QUEBRA_LINHA;
 
-        return $dadosDoGato;
-    }
+//         return $dadosDoGato;
+//     }
 
+// }
 
+// $objGato = new Gato();
 
-}
+// $objGato->racaGato = "Persa";
+// $objGato->idadeGato = "5";
+// $objGato->pelugemGato = "Longa, densa, sedosa e volumosa";
+// $objGato->caracteristicaPrincipalGato = "Calmo e Dócil";
+// $objGato->alimentoGato = "Rações Super Premium específicas para a raça";
 
-$objGato = new Gato();
+// $objGato->carinhoNoGato(). QUEBRA_LINHA;
+// echo $objGato;
 
-$objGato->racaGato = "Persa";
-$objGato->idadeGato = "5";
-$objGato->pelugemGato = "Longa, densa, sedosa e volumosa";
-$objGato->caracteristicaPrincipalGato = "Calmo e Dócil";
-$objGato->alimentoGato = "Rações Super Premium específicas para a raça";
+// echo "<h3>Papagaio</h3>";
+
+// class Papagaio {
+//     public $racaP; // P, representa papagaio.
+//     public $idadeP;
+//     public $penugem;
+//     public $alimentoP;
+//     public $caracteristicaPrincipalP;
+//     private $palavra = "Cachorro";
+
+//     public function repetirPalavra($perto = false){
+//         if(!$perto){
+//             echo "Fale a palavra para o papagaio repetir!" . QUEBRA_LINHA;
+//         } else {
+//             echo $this->palavra;
+//         }
+//     }
+
+//     public function __toString(){
+//         $dadosDoPapagaio = "Raça:$this->racaP" . QUEBRA_LINHA .
+//         "Idade:$this->idadeP" . QUEBRA_LINHA .
+//         "Pelugem:$this->penugem" . QUEBRA_LINHA .
+//         "Alimento:$this->alimentoP" . QUEBRA_LINHA .
+//         "Caractéristicas:$this->caracteristicaPrincipalP";
+
+//         return $dadosDoPapagaio;
+//     }
+// }
+
+// $objPapagaio = new Papagaio();
+
+// $objPapagaio->racaP = "Papagaio Verdadeiro";
+// $objPapagaio->idadeP =  "40";
+// $objPapagaio->penugem = "Verde, Penas de cores vibrantes";
+// $objPapagaio->alimentoP = "Sementes, castanhas, frutas, brotos e pequenos insetos";
+// $objPapagaio->caracteristicaPrincipalP = "Longevidade, de 60 até 80 anos";
+
+// $objPapagaio->repetirPalavra();
+// echo $objPapagaio;
+
