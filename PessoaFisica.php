@@ -17,4 +17,10 @@ class PessoaFisica extends PessoaAbstract{
         $cpf = $this->CPF;
         $this->validarCPF($cpf);
     }
+
+    private function validarNome(){
+        if(!$this->nome){
+            throw new Exception("O nome não pode estar em branco!");
+        }
+    }
 }
