@@ -12,6 +12,8 @@
 
 $dados = $_REQUEST;
 
+require_once "./conexao.php";
+
 $irParaListagem = empty($dados) || !isset($dados["rota"]);
 
 if($irParaListagem){
